@@ -1,0 +1,26 @@
+-x
+objective-c
+-arch
+i386
+-std=gnu99
+-gmodules
+-fpascal-strings
+-Os
+-DDEBUG=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk
+-fasm-blocks
+-mios-simulator-version-min=6.1
+-g
+-fvisibility=hidden
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-iquote
+-iquote
+-I/Users/denglibing/Downloads/sample-code-master/sample-code/apps/TestApp/build/Release-iphonesimulator/include
+-F/Users/denglibing/Downloads/sample-code-master/sample-code/apps/TestApp/build/Release-iphonesimulator
+-DNS_BLOCK_ASSERTIONS=1
+i386-apple-darwin16.3.0
+"4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)"
+SDK_PRODUCT_BUILD_VERSION=14B72
+14B72

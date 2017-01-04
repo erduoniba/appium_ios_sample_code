@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A830071-06AC-4E20-9FBB-CAA395387A7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AppiumDotNetSample</RootNamespace>
+    <AssemblyName>AppiumDotNetSample</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Appium.WebDriver.2.0.0.1\lib\net45\appium-dotnet-driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.53.1\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.53.1\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Android\AndroidActivityTest.cs" />
+    <Compile Include="Android\AndroidAppStringsTest.cs" />
+    <Compile Include="Android\AndroidConnectionTest.cs" />
+    <Compile Include="Android\AndroidElementTest.cs" />
+    <Compile Include="Android\AndroidEmulatorDeviceTime.cs" />
+    <Compile Include="Android\AndroidGestureTest.cs" />
+    <Compile Include="Android\AndroidKeyPressTest.cs" />
+    <Compile Include="Android\AndroidLocationTest.cs" />
+    <Compile Include="Android\AndroidLockDeviceTest.cs" />
+    <Compile Include="Android\AndroidOrientationTest.cs" />
+    <Compile Include="Android\AndroidSearchingTest.cs" />
+    <Compile Include="Android\AndroidSessionTest.cs" />
+    <Compile Include="Android\AndroidTouchActionTest.cs" />
+    <Compile Include="Android\AndroidWebviewTest.cs" />
+    <Compile Include="Android\FileInteractionTest.cs" />
+    <Compile Include="Android\HideKeyboardTestCase.cs" />
+    <Compile Include="Android\IntentAndroidTest.cs" />
+    <Compile Include="helpers\AppiumServers.cs" />
+    <Compile Include="helpers\Apps.cs" />
+    <Compile Include="helpers\Caps.cs" />
+    <Compile Include="helpers\Env.cs" />
+    <Compile Include="iOS\iOSAlertTest.cs" />
+    <Compile Include="iOS\iOSElementTest.cs" />
+    <Compile Include="iOS\IosGestureTest.cs" />
+    <Compile Include="iOS\IOSLocationTest.cs" />
+    <Compile Include="iOS\IosOrientationTest.cs" />
+    <Compile Include="iOS\IOSScrollingSearchingTest.cs" />
+    <Compile Include="iOS\iOSSearchingTest.cs" />
+    <Compile Include="iOS\iOSTouchActionTest.cs" />
+    <Compile Include="iOS\IosWebviewTest.cs" />
+    <Compile Include="PageObjects\AndroidPageObjectChecksAttributeMixOnNativeApp1.cs" />
+    <Compile Include="PageObjects\AndroidPageObjectChecksAttributeMixOnNativeApp2.cs" />
+    <Compile Include="PageObjects\AndroidPageObjectChecksAttributesForNativeAndroidApp.cs" />
+    <Compile Include="PageObjects\AndroidPageObjectChecksSelendroidModeOnNativeApp.cs" />
+    <Compile Include="PageObjects\AndroidPageObjectChecksSeleniumFindsByCompatibility.cs" />
+    <Compile Include="PageObjects\AndroidWebView.cs" />
+    <Compile Include="PageObjects\IOSPageObjectChecksAttributeMixOnNativeApp.cs" />
+    <Compile Include="PageObjects\IOSPageObjectChecksAttributesForNativeIOSApp.cs" />
+    <Compile Include="PageObjectTests\Android\AndroidNativeAppAttributesTest.cs" />
+    <Compile Include="PageObjectTests\Android\AndroidTestThatChecksAttributeMix1.cs" />
+    <Compile Include="PageObjectTests\Android\AndroidTestThatChecksAttributeMix2.cs" />
+    <Compile Include="PageObjectTests\Android\AndroidTestThatChecksAttributeMix3SelendroidMode.cs" />
+    <Compile Include="PageObjectTests\Android\AndroidWebViewTest.cs" />
+    <Compile Include="PageObjectTests\Android\SeleniumAttributesCompatipilityTest.cs" />
+    <Compile Include="PageObjectTests\DesktopBrowserCompatibility\DesktopBrowserCompatibilityTest.cs" />
+    <Compile Include="PageObjectTests\IOS\IOSNativeAppAttributesTest.cs" />
+    <Compile Include="PageObjectTests\IOS\IOSTestThatChecksAttributeMix.cs" />
+    <Compile Include="PageObjectTests\TimeOutManagement\TimeOutManagementTest.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTests\AppiumLocalServerLaunchingTest.cs" />
+    <Compile Include="ServerTests\StartingAppLocallyTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="AppiumDotNetSample.csproj" />
+    <None Include="packages.config" />
+    <None Include="Resources\ApiDemos-debug.apk" />
+    <None Include="Resources\IntentExample.apk" />
+    <None Include="Resources\PathToLinuxNode" />
+    <None Include="Resources\PathToMacOSNode" />
+    <None Include="Resources\PathToWindowsNode" />
+    <None Include="Resources\selendroid-test-app-0.10.0.apk" />
+    <None Include="Resources\TestApp7.1.app.zip" />
+    <None Include="Resources\UICatalog.zip" />
+    <None Include="Resources\WebViewApp7.1.app.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+</Project>
