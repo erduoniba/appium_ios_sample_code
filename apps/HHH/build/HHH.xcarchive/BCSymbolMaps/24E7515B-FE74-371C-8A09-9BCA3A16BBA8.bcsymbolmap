@@ -1,0 +1,63 @@
+BCSymbolMap Version: 2.0
+-[ViewController viewDidLoad]
+-[ViewController changeLbText:]
+-[ViewController nextVC:]
+-[ViewController didReceiveMemoryWarning]
+-[ViewController lbbb]
+-[ViewController setLbbb:]
+-[ViewController bttt]
+-[ViewController setBttt:]
+-[ViewController textF1]
+-[ViewController setTextF1:]
+-[ViewController .cxx_destruct]
+_OBJC_CLASS_$_ViewController
+_OBJC_IVAR_$_ViewController._lbbb
+_OBJC_CLASS_$_ViewController2
+_OBJC_IVAR_$_ViewController._bttt
+_OBJC_IVAR_$_ViewController._textF1
+_OBJC_METACLASS_$_ViewController
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+/Users/denglibing/Desktop/sample-code/apps/HHH/HHH/ViewController.m
+/Users/denglibing/Desktop/sample-code/apps/HHH
+-[ViewController2 viewDidLoad]
+-[ViewController2 update]
+-[ViewController2 retureVC:]
+-[ViewController2 didReceiveMemoryWarning]
+-[ViewController2 dealloc]
+-[ViewController2 timer]
+-[ViewController2 setTimer:]
+-[ViewController2 ssss]
+-[ViewController2 setSsss:]
+-[ViewController2 .cxx_destruct]
+_OBJC_IVAR_$_ViewController2._ssss
+_OBJC_CLASS_$_WeakTarget
+_OBJC_IVAR_$_ViewController2._timer
+_OBJC_METACLASS_$_ViewController2
+/Users/denglibing/Desktop/sample-code/apps/HHH/HHH/ViewController2.m
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate .cxx_destruct]
+_OBJC_IVAR_$_AppDelegate._window
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_METACLASS_$_AppDelegate
+_OBJC_CLASS_$_AppDelegate
+/Users/denglibing/Desktop/sample-code/apps/HHH/HHH/AppDelegate.m
+/Users/denglibing/Desktop/sample-code/apps/HHH/HHH/AppDelegate.h
+/Users/denglibing/Desktop/sample-code/apps/HHH/HHH/main.m
+main
+-[WeakTarget initWithTarget:selector:]
+-[WeakTarget timerDidFire:]
+-[WeakTarget .cxx_destruct]
+_OBJC_IVAR_$_WeakTarget.targ
+_OBJC_IVAR_$_WeakTarget.sel
+_OBJC_METACLASS_$_WeakTarget
+/Users/denglibing/Desktop/sample-code/apps/HHH/HHH/WeakTarget.m

@@ -13,7 +13,8 @@ class SimpleIOSTests(unittest.TestCase):
         # set up appium
         # http://appium.io/slate/cn/master/?ruby#appium
 
-        app = os.path.abspath('../../apps/HHH/build/Release-iphonesimulator/HHH.app')
+        app = os.path.abspath('/Users/denglibing/Library/Developer/Xcode/DerivedData/Fangduoduo-ggdhbkqeynozvnecriohuprtublh/Build/Products/Release-iphonesimulator/Fangduoduo.app')
+#        app = os.path.abspath('../../apps/HHH/build/Release-iphonesimulator/HHH.app')
         self.driver = webdriver.Remote(
                                command_executor='http://127.0.0.1:4723/wd/hub',
                                desired_capabilities={
@@ -40,7 +41,7 @@ class SimpleIOSTests(unittest.TestCase):
 #        self.driver.quit()
 
     def test_scroll(self):
-        self.driver.find_element_by_accessibility_id('button').click()
+#        self.driver.find_element_by_accessibility_id('button').click()
 
         sleep(1)
         try:

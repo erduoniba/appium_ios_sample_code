@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 
+#import "ViewController2.h"
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *lbbb;
 @property (weak, nonatomic) IBOutlet UIButton *bttt;
+@property (weak, nonatomic) IBOutlet UITextField *textF1;
 
 @end
 
@@ -20,12 +23,18 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	[_lbbb setAccessibilityIdentifier:@"label"];
-	[_bttt setAccessibilityIdentifier:@"button"];
+//	[_lbbb setAccessibilityIdentifier:@"label"];
+//	[_bttt setAccessibilityIdentifier:@"button"];
 }
 
 - (IBAction)changeLbText:(id)sender {
 	_lbbb.text = @"appium test succeed";
+    
+    
+}
+
+- (IBAction)nextVC:(id)sender {
+    [self presentViewController:[ViewController2 new] animated:YES completion:Nil];
 }
 
 - (void)didReceiveMemoryWarning {
