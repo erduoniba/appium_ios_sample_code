@@ -26,7 +26,9 @@ class SimpleIOSTests(unittest.TestCase):
 ##                               'udid': 'bc7c227a4d06b6794a288459cc0255254d8e7e27',
 #                               })
 
-        app = os.path.abspath('../../apps/HHH/build/Release-iphoneos/HHH.app')
+#        app = os.path.abspath('../../apps/HHH/build/Release-iphoneos/HHH.app')
+
+        app = os.path.abspath('/Users/denglibing/Library/Developer/Xcode/DerivedData/Fangduoduo-ggdhbkqeynozvnecriohuprtublh/Build/Products/Release-iphoneos//Fangduoduo_ent.app')
         self.driver = webdriver.Remote(
             command_executor='http://127.0.0.1:4723/wd/hub',
             desired_capabilities={
@@ -35,16 +37,15 @@ class SimpleIOSTests(unittest.TestCase):
                 'platformVersion': '10.1.1',
                 'deviceName': 'denglibing_i7',
                 'automationName': 'XCUITest',
-                'bundleId': 'com.youlian365.youyubao',
+                'bundleId': 'ershoufanglzg.fangdd.com',
                 'udid': 'bc7c227a4d06b6794a288459cc0255254d8e7e27',
-#                'idevice_id': 'bc7c227a4d06b6794a288459cc0255254d8e7e27',
             })
 
 #    def tearDown(self):
 ##        self.driver.quit()
 
     def test_scroll(self):
-        self.driver.find_element_by_accessibility_id('button').click()
+#        self.driver.find_element_by_accessibility_id('button').click()
 
         sleep(1)
         try:

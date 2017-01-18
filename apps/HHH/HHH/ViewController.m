@@ -10,7 +10,7 @@
 
 #import "ViewController2.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *lbbb;
 @property (weak, nonatomic) IBOutlet UIButton *bttt;
@@ -23,8 +23,10 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-//	[_lbbb setAccessibilityIdentifier:@"label"];
-//	[_bttt setAccessibilityIdentifier:@"button"];
+	[_lbbb setAccessibilityIdentifier:@"label"];
+	[_bttt setAccessibilityIdentifier:@"button"];
+    _textF1.text = @"HHH";
+    _textF1.delegate = self;
 }
 
 - (IBAction)changeLbText:(id)sender {
@@ -35,6 +37,12 @@
 
 - (IBAction)nextVC:(id)sender {
     [self presentViewController:[ViewController2 new] animated:YES completion:Nil];
+}
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
