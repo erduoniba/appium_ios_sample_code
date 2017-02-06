@@ -44,39 +44,52 @@ class SimpleIOSTests(unittest.TestCase):
 #    def tearDown(self):
 #        self.driver.quit()
 
-    def test_scroll(self):
-        self.driver.find_element_by_accessibility_id('button').click()
+    def test_action(self):
         
-        sleep(1)
-        lbbb = self.driver.find_element_by_class_name("XCUIElementTypeStaticText")
-        textF1 = self.driver.find_element_by_name('HHH')
-
-        print("HHHHHHHH1 %s" % (self.driver.contexts))
-        print("HHHHHHHH2 %s" % (self.driver.page_source))
-        print("HHHHHHHH3 %s %s" % (lbbb, textF1))
-
-        sleep(1)
+        sleep(5)
         
-        textF1.send_keys("HHHHHHH")
-
-        sleep(1)
-        self.driver.hide_keyboard()
+        lbbb = self.driver.find_element_by_accessibility_id("label")
+        print("lbbb.text %s" % (lbbb.text))
         
-        try:
+
+        if lbbb.text == "appium test succeed" :
+            self.driver.find_element_by_accessibility_id('button').click()
+    
+            bbbb = self.driver.find_element_by_accessibility_id("bbbb")
+
             sleep(1)
-        except:
-            pass
+            lbbb = self.driver.find_element_by_class_name("XCUIElementTypeStaticText")
+            textF1 = self.driver.find_element_by_name('HHH')
+        
+            print("HHHHHHHH1 %s" % (self.driver.contexts))
+            print("HHHHHHHH2 %s" % (self.driver.page_source))
+            print("HHHHHHHH3 %s %s" % (lbbb, textF1))
+        
+            textF1.send_keys("HHHHHHH")
+        
+            sleep(1)
+            self.driver.hide_keyboard()
+        
+            bbbb.click()
+        
+            try:
+                sleep(1)
+            except:
+                pass
+
+
+        
+
 
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(SimpleIOSTests)
-#    unittest.TextTestRunner(verbosity=2).run(suite)
+    unittest.TextTestRunner(verbosity=1).run(suite)
 
     timestr = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
-    filename = "/Users/denglibing/Desktop/appiumresult" + timestr + ".html"
+    filename = "/Users/denglibing/Desktop/appiumresult/appiumresult" + timestr + ".html"
     print(filename)
     fp = open(filename, 'wb')
-
     runner = HTMLTestRunner.HTMLTestRunner(
                                        stream=fp,
                                        title='testresult',

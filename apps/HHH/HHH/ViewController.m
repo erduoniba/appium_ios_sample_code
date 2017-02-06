@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbbb;
 @property (weak, nonatomic) IBOutlet UIButton *bttt;
 @property (weak, nonatomic) IBOutlet UITextField *textF1;
+@property (weak, nonatomic) IBOutlet UIButton *otherBt;
 
 @end
 
@@ -25,6 +26,7 @@
 	
 	[_lbbb setAccessibilityIdentifier:@"label"];
 	[_bttt setAccessibilityIdentifier:@"button"];
+    [_otherBt setAccessibilityIdentifier:@"bbbb"];
     _textF1.text = @"HHH";
     _textF1.delegate = self;
 }

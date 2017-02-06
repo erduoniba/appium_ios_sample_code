@@ -60,6 +60,7 @@
                     <connections>
                         <outlet property="bttt" destination="GvY-eQ-m8X" id="huU-TI-uHh"/>
                         <outlet property="lbbb" destination="c0N-qu-VxY" id="gOy-7L-b1y"/>
+                        <outlet property="otherBt" destination="Hsx-wq-FnV" id="Psb-qV-Ia3"/>
                         <outlet property="textF1" destination="qCF-p3-EJM" id="F58-5L-dRe"/>
                     </connections>
                 </viewController>
